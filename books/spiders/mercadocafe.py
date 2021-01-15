@@ -21,7 +21,7 @@ class MercadoLibreCrawler(CrawlSpider):
 
     custom_settings = {
       'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/71.0.3578.80 Chrome/71.0.3578.80 Safari/537.36',
-      'CLOSESPIDER_PAGECOUNT': 100 # Numero maximo de paginas en las cuales voy a descargar items. Scrapy se cierra cuando alcanza este numero
+      #'CLOSESPIDER_PAGECOUNT': 100 # Numero maximo de paginas en las cuales voy a descargar items. Scrapy se cierra cuando alcanza este numero
     }
 
     # Utilizamos 2 dominios permitidos, ya que los articulos utilizan un dominio diferente
@@ -35,7 +35,7 @@ class MercadoLibreCrawler(CrawlSpider):
     start_urls = ['https://listado.mercadolibre.com.pe/otras-categorias/alimentos-bebidas/cafe#D[A:cafe,L:undefined,on]]']
 
 
-    download_delay = 2
+    #download_delay = 2
 
     # Tupla de reglas
     rules = (
